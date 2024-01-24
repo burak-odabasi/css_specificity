@@ -1,0 +1,23 @@
+#header-id {
+  color: aquamarine;
+}
+
+.header {
+  color: red;
+}
+
+.text {
+  color: green;
+}
+
+h1 {
+  color: blue;
+}
+
+/* 0       0   0        0
+   inline, id, class,   element
+
+   first compares first digit then 2nd etc,
+   10 in a digit doesnt overflow to next digit.
+
+   0,1,0,0 > 0,0,12,0 */
