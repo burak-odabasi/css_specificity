@@ -1,15 +1,32 @@
-#header-id {
+/* 0101 using the direct child just takes body as element,
+same as the example below it */
+body > #header-id {
+  color: yellow;
+}
+
+/* 0101  */
+body #header-id {
   color: aquamarine;
 }
 
-.header {
-  color: red;
+/* 0100 */
+#header-id {
+  color: orange;
 }
 
+/* 0020 */
+.header.header1 {
+  color: red;
+}
+/* 0010 */
+.header {
+  color: rgb(22, 0, 0);
+}
+/* 0010 */
 .text {
   color: green;
 }
-
+/* 0001 */
 h1 {
   color: blue;
 }
@@ -21,3 +38,11 @@ h1 {
    10 in a digit doesnt overflow to next digit.
 
    0,1,0,0 > 0,0,12,0 */
+
+/* important keyword adds 5th digit, overrides everything */
+
+/* if 2 things have important, then specificity is compared */
+
+/* additional selectors like pseudo and sibling are ignored for specificity, use with ease of mind */
+
+/* you can see what overrides what with dev tools */
